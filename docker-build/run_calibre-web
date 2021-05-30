@@ -2,3 +2,4 @@ docker run -d --name=calibre-web -e PUID=1000 -e PGID=1000 -e TZ=Asia/Shanghai -
   -v /path/to/calibre/library:/books --restart unless-stopped linuxserver/calibre-web
 
 docker run -d -e TZ=Asia/Shanghai -e DOCKER_MODS=linuxserver/calibre-web:calibre -p 8083:8083 -v /tank/software/config/calibre-web:/config -v /tank/library/Library:/books linuxserver/calibre-web
+Default ACCOUNT INFO: admin/admin123
