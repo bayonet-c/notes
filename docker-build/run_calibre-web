@@ -4,4 +4,4 @@ docker run -d --name=calibre-web -e PUID=1000 -e PGID=1000 -e TZ=Asia/Shanghai -
 docker run -d -e TZ=Asia/Shanghai -e DOCKER_MODS=linuxserver/calibre-web:calibre -p 8083:8083 -v /tank/software/config/calibre-web:/config -v /tank/library/Library:/books linuxserver/calibre-web
 Default ACCOUNT INFO: admin/admin123
 
-docker run --name=calibre-web -v /tank/library/Library:/books -v /tank/software/config/calibre-web:/calibre-web/config -e USE_CONFIG_DIR=true -e SET_CONTAINER_TIMEZONE=true -e CONTAINER_TIMEZONE=Asia/Shanghai -e PGID=1000 -e PUID=1000 -p 8083:8083 technosoft2000/calibre-web
+docker run -d --name=calibre-web -v /tank/library/Library:/books -v /tank/software/config/calibre-web:/calibre-web/config -e USE_CONFIG_DIR=true -e SET_CONTAINER_TIMEZONE=true -e CONTAINER_TIMEZONE=Asia/Shanghai -e PGID=1000 -e PUID=1000 -p 8083:8083 technosoft2000/calibre-web
