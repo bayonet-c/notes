@@ -6,4 +6,4 @@ To access: http://container-host:8096
 
 To use the Emby official image:
 
-docker run -d -v /tank/software/config/emby:/config -v /tank/video:/mnt/share1 -v /tank/photo:/share2 -v /tank/audio:/share3 --net=host emby/embyserver
+docker run -d -v /tank/software/config/emby:/config -v /tank/video:/share1 -v /tank/photo:/share2 -v /tank/audio:/share3 --net=host emby/embyserver
