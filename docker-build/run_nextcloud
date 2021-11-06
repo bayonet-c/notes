@@ -1,0 +1,2 @@
+ docker run -d -p 8082:80 -v nextcloud:/tank/software/config/nextcloud -v apps:/tank/software/config/nextcloud/custom_apps -v config:/tank/software/config/nextcloud/config \
+ -v data:/tank/software/config/nextcloud/data -v theme:/tank/software/config/nextcloud/themes/ nextcloud

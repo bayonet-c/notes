@@ -1,0 +1,7 @@
+docker run --detach \
+  --publish 443:443 --publish 80:80 --publish 22:22 \
+  --name gitlab \
+  --volume /tank/software/config/gitlab/config:/etc/gitlab \
+  --volume /tank/software/config/gitlab/logs:/var/log/gitlab \
+  --volume /tank/software/config/gitlab/data:/var/opt/gitlab \
+  gitlab/gitlab-ce:latest

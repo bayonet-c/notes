@@ -1,0 +1,10 @@
+docker run -d --name=calibre-web -e PUID=1000 -e PGID=1000 -e TZ=Asia/Shanghai   -e DOCKER_MODS=linuxserver/calibre-web:calibre \
+-p 8083:8083 -v /tank/software/config/calibre-web:/config -v /tank/library/Library:/books --restart unless-stopped ghcr.io/linuxserver/calibre-web
+ 
+docker run -d -e TZ=Asia/Shanghai -e DOCKER_MODS=linuxserver/calibre-web:calibre -p 8083:8083 -v /tank/software/config/calibre-web:/config -v /tank/library/Library:/books linuxserver/calibre-web
+Default ACCOUNT INFO: admin/admin123
+
+docker create --name=calibre -v /calibre/config:/config -v /media/ivy/新加卷/书籍:/books -p 8083:8083 ctiself/calibre-web
+docker run -d --name=calibre -v /tank/software/config/calibre-web:/config -v /tank/library/Library:/books -p 8083:8083 ctiself/calibre-web
+https://ld246.com/article/1574229066822
+https://zhuanlan.zhihu.com/p/203539548
