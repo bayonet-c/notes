@@ -1,0 +1,7 @@
+Make the $HOME/work to be mode 0777:
+
+docker run -d -e NB_USER=$USER -e NB_GROUP=`id -gn` -e NB_UID=`id -u` -e NB_GID=`id -g` \
+  -p 8888:8888 -v $HOME/work:/home/jovyan jupyter/base-notebook start-notebook.sh \
+  --NotebookApp.password='argon2:$argon2id$v=19$m=10240,t=10,p=8$Uo3jxw4uiQCFpUcUMNE5Rg$bvk9HyNDJPgy75LxZ6Lsrw'
+
+Password is 'guest'.
